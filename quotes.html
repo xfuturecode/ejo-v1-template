@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quotes — Effective Joy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-bar">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" alt="logo"><span>Effective Joy</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span></button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a class="active" href="quotes.html">Quotes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h2 style="color:#0a65cc; margin-bottom:16px;">Citations du jour</h2>
+    <div class="grid three" id="quotes-grid">
+      <blockquote class="card" style="padding:18px;">
+        <p style="color:#2b2b2b;">“La joie est une force.”</p>
+        <cite style="color:#0a65cc;">— Nehemie 8:10</cite>
+      </blockquote>
+      <blockquote class="card" style="padding:18px;">
+        <p style="color:#2b2b2b;">“Là où deux ou trois sont réunis, je suis au milieu d’eux.”</p>
+        <cite style="color:#0a65cc;">— Matthieu 18:20</cite>
+      </blockquote>
+      <blockquote class="card" style="padding:18px;">
+        <p style="color:#2b2b2b;">“Aime ton prochain comme toi-même.”</p>
+        <cite style="color:#0a65cc;">— Marc 12:31</cite>
+      </blockquote>
+    </div>
+    <section class="section grid two">
+      <div class="card" style="padding:24px;">
+        <h3 style="color:#0a65cc; margin-bottom:8px;">Soumettre une citation</h3>
+        <form style="display:grid; gap:10px;">
+          <input placeholder="Auteur" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff;"/>
+          <textarea placeholder="Votre citation" rows="3" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff;"></textarea>
+          <button class="btn primary">Envoyer</button>
+        </form>
+      </div>
+      <div class="card" style="padding:24px;">
+        <h3 style="color:#0a65cc; margin-bottom:8px;">Thèmes</h3>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn ghost" href="#">Foi</a>
+          <a class="btn ghost" href="#">Espoir</a>
+          <a class="btn ghost" href="#">Amour</a>
+          <a class="btn ghost" href="#">Service</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Effectif Joy</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

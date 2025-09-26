@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — Effective Joy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-bar">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" alt="logo"><span>Effective Joy</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span></button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="height:40vh;">
+    <div class="hero-content"><h1>Le Blog</h1><p>Histoires, enseignements et news.</p></div>
+  </section>
+
+  <main class="section container">
+    <h2 style="color:#0a65cc; margin-bottom:16px;">Nos Articles</h2>
+    <div class="grid three">
+      <article class="card elevate-2">
+        <img class="card-media" src="/assets/Layer 0.png" alt="Article">
+        <div class="card-body">
+          <h3>La joie qui unit</h3>
+          <p>Comment bâtir une communauté solide autour de valeurs partagées.</p>
+          <a class="btn text" href="#">Lire</a>
+        </div>
+      </article>
+      <article class="card elevate-2">
+        <img class="card-media" src="/assets/Gradient Fill 1.png" alt="Article">
+        <div class="card-body">
+          <h3>Servir avec impact</h3>
+          <p>Des témoignages inspirants de nos initiatives locales.</p>
+          <a class="btn text" href="#">Lire</a>
+        </div>
+      </article>
+      <article class="card elevate-2">
+        <img class="card-media" src="/assets/Layer 0.png" alt="Article">
+        <div class="card-body">
+          <h3>Musique et foi</h3>
+          <p>Quand l'art rapproche les cœurs.</p>
+          <a class="btn text" href="#">Lire</a>
+        </div>
+      </article>
+    </div>
+    <section class="section grid two">
+      <div class="card" style="padding:24px;">
+        <h3 style="color:#0a65cc; margin-bottom:8px;">Catégories</h3>
+        <ul style="list-style:none; color:#2b2b2b; display:grid; gap:6px;">
+          <li><a class="btn ghost" href="#">Communauté</a></li>
+          <li><a class="btn ghost" href="#">Musique</a></li>
+          <li><a class="btn ghost" href="#">Événements</a></li>
+        </ul>
+      </div>
+      <div class="card" style="padding:24px;">
+        <h3 style="color:#0a65cc; margin-bottom:8px;">Newsletter</h3>
+        <form style="display:flex; gap:10px; flex-wrap:wrap;">
+          <input placeholder="Email" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff; min-width:240px;"/>
+          <button class="btn primary">S'inscrire</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Effectif Joy</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community — Effective Joy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-bar">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" alt="logo"><span>Effective Joy</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span></button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="community.html">Community</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h2 style="color:#0a65cc; margin-bottom:16px;">Rejoignez la communauté</h2>
+    <p style="color:#2b2b2b; margin-bottom:24px;">Partagez, servez et grandissez avec nous. Inscrivez-vous pour recevoir les nouvelles et opportunités.</p>
+    <form class="card" style="padding:18px; display:grid; gap:12px;">
+      <label style="color:#2b2b2b;">Nom
+        <input style="width:100%; padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff;" placeholder="Votre nom"/>
+      </label>
+      <label style="color:#2b2b2b;">Email
+        <input type="email" style="width:100%; padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff;" placeholder="vous@exemple.com"/>
+      </label>
+      <button class="btn primary" style="width:max-content;">S'inscrire</button>
+    </form>
+    <section class="section grid two">
+      <div class="card" style="padding:24px;">
+        <h3 style="color:#0a65cc; margin-bottom:8px;">Groupes</h3>
+        <p style="color:#2b2b2b;">Trouvez un groupe près de chez vous.</p>
+        <a class="btn tonal" href="#">Voir les groupes</a>
+      </div>
+      <div class="card" style="padding:24px;">
+        <h3 style="color:#0a65cc; margin-bottom:8px;">Devenir bénévole</h3>
+        <p style="color:#2b2b2b;">Participez à nos actions sociales.</p>
+        <a class="btn primary" href="#">Je m'engage</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Effectif Joy</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

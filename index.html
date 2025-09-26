@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Effective Joy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/assets/ejo.png" />
+</head>
+<body>
+
+  <header class="app-bar">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="/assets/ejo.png" alt="Effectif Joy Logo" width="36">
+        <span class="kali">Effective Joy</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span></button>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <li><a class="btn primary sm" href="#">Login</a></li>
+        </ul>
+      </nav>
+      <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+      <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation">
+        <ul class="nav-list">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <li><a class="btn primary sm" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide is-active" style="background-image:url('/assets/Gradient Fill 1.png')">
+        <div class="hero-content">
+          <h1>Effective Joy</h1>
+          <p>Un mouvement communautaire qui élève, inspire et rassemble autour d’événements, d’articles et de témoignages.</p>
+          <div class="buttons">
+            <a href="event.html" class="btn primary">Découvrir les événements</a>
+            <a href="community.html" class="btn outline">Rejoindre la communauté</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image:url('/assets/Layer 0.png')">
+        <div class="hero-content">
+          <h1>Des événements qui unissent</h1>
+          <p>Concerts, ateliers, rencontres — participez et vibrez avec nous.</p>
+          <div class="buttons">
+            <a href="event.html" class="btn primary">Réserver</a>
+            <a href="blog.html" class="btn outline">Voir les histoires</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image:url('/assets/Gradient Fill 1.png')">
+        <div class="hero-content">
+          <h1>Une communauté engagée</h1>
+          <p>Servir, apprendre, grandir — rejoignez le mouvement.</p>
+          <div class="buttons">
+            <a href="community.html" class="btn primary">Nous rejoindre</a>
+            <a href="quotes.html" class="btn outline">Inspiration</a>
+          </div>
+        </div>
+      </div>
+      <button class="hero-nav prev" id="heroPrev" aria-label="Précédent">‹</button>
+      <button class="hero-nav next" id="heroNext" aria-label="Suivant">›</button>
+      <div class="hero-dots" id="heroDots"></div>
+    </div>
+  </section>
+
+  <section class="stats section">
+    <div class="container grid three">
+      <div class="stat reveal"><div class="value">50K+</div><div class="label">Membres rejoints</div></div>
+      <div class="stat reveal"><div class="value">200+</div><div class="label">Événements organisés</div></div>
+      <div class="stat reveal"><div class="value">1M+</div><div class="label">Vies impactées</div></div>
+    </div>
+  </section>
+
+  <section class="section container grid three">
+    <article class="card elevate-2">
+      <img class="card-media" src="/assets/Layer 0.png" alt="Event preview">
+      <div class="card-body">
+        <h3>Prochains Events</h3>
+        <p>Participez à nos rencontres, concerts et activités solidaires.</p>
+        <a class="btn text" href="event.html">Explorer</a>
+      </div>
+    </article>
+    <article class="card elevate-2">
+      <img class="card-media" src="/assets/Gradient Fill 1.png" alt="Blog preview">
+      <div class="card-body">
+        <h3>Blog</h3>
+        <p>Des histoires et des réflexions pour nourrir la foi et l'action.</p>
+        <a class="btn text" href="blog.html">Lire</a>
+      </div>
+    </article>
+    <article class="card elevate-2">
+      <img class="card-media" src="/assets/Layer 0.png" alt="Quotes preview">
+      <div class="card-body">
+        <h3>Quotes</h3>
+        <p>Des citations motivantes pour illuminer votre journée.</p>
+        <a class="btn text" href="quotes.html">Découvrir</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section container grid two">
+    <div class="card" style="padding:24px;">
+      <h3 style="color:#0a65cc; margin-bottom:8px;">Derniers articles</h3>
+      <div class="grid two">
+        <article class="card"><div class="card-body"><h4 style="color:#0a65cc;">Construire ensemble</h4><p style="color:#2b2b2b;">Une vision pour 2026.</p><a class="btn ghost" href="blog.html">Lire</a></div></article>
+        <article class="card"><div class="card-body"><h4 style="color:#0a65cc;">Servir avec joie</h4><p style="color:#2b2b2b;">Nos projets communautaires.</p><a class="btn ghost" href="blog.html">Lire</a></div></article>
+      </div>
+    </div>
+    <div class="card" style="padding:24px;">
+      <h3 style="color:#0a65cc; margin-bottom:8px;">Événements à la une</h3>
+      <div class="grid two">
+        <article class="card"><div class="card-body"><h4 style="color:#0a65cc;">Vibration</h4><p style="color:#2b2b2b;">23 Nov. 25 • Kigali</p><a class="btn primary lg" href="event.html">Réserver</a></div></article>
+        <article class="card"><div class="card-body"><h4 style="color:#0a65cc;">Atelier Talents</h4><p style="color:#2b2b2b;">Jan. • Kigali</p><a class="btn tonal lg" href="event.html">Détails</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container grid two">
+    <div class="card" style="padding:24px;">
+      <h3 style="color:#0a65cc; margin-bottom:8px;">FAQ</h3>
+      <details class="card" style="padding:12px; margin-bottom:8px;"><summary style="color:#0a65cc; cursor:pointer;">Comment rejoindre la communauté ?</summary><p style="color:#2b2b2b; padding-top:8px;">Rendez-vous sur la page Community et inscrivez-vous.</p></details>
+      <details class="card" style="padding:12px; margin-bottom:8px;"><summary style="color:#0a65cc; cursor:pointer;">Comment devenir bénévole ?</summary><p style="color:#2b2b2b; padding-top:8px;">Contactez-nous via le formulaire Community.</p></details>
+    </div>
+    <div class="card" style="padding:24px;">
+      <h3 style="color:#0a65cc; margin-bottom:8px;">Partenaires</h3>
+      <div class="grid four">
+        <div class="card" style="padding:18px; text-align:center;">Logo A</div>
+        <div class="card" style="padding:18px; text-align:center;">Logo B</div>
+        <div class="card" style="padding:18px; text-align:center;">Logo C</div>
+        <div class="card" style="padding:18px; text-align:center;">Logo D</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container narrow">
+      <h2>À propos</h2>
+      <p>Effective Joy est une organisation chrétienne qui utilise l’art (danse, musique, spectacles) et les services (formation, technologies, actions sociales) comme instruments pour annoncer l’Évangile et impacter positivement les vies.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2 style="color:#0a65cc; text-align:center; margin-bottom:16px;">Témoignages</h2>
+    <div class="slider card" style="padding:18px;">
+      <div class="slides" id="slides">
+        <figure class="slide card" style="padding:18px;">
+          <blockquote style="color:#2b2b2b;">“Grâce à Effective Joy, j’ai trouvé une famille et un but.”</blockquote>
+          <figcaption style="color:#0a65cc; margin-top:8px;">— Kevin</figcaption>
+        </figure>
+        <figure class="slide card" style="padding:18px;">
+          <blockquote style="color:#2b2b2b;">“Des événements excellents et une atmosphère incroyable.”</blockquote>
+          <figcaption style="color:#0a65cc; margin-top:8px;">— Anita</figcaption>
+        </figure>
+        <figure class="slide card" style="padding:18px;">
+          <blockquote style="color:#2b2b2b;">“On apprend à servir avec joie et excellence.”</blockquote>
+          <figcaption style="color:#0a65cc; margin-top:8px;">— Marc</figcaption>
+        </figure>
+      </div>
+      <div class="slider-controls" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f6f9ff;">
+    <div class="container narrow card" style="padding:24px; text-align:center;">
+      <h3 style="color:#0a65cc; margin-bottom:8px;">Newsletter</h3>
+      <p style="color:#2b2b2b; margin-bottom:12px;">Recevez nos nouvelles et opportunités.</p>
+      <form style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+        <input type="email" placeholder="vous@exemple.com" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff; min-width:240px;">
+        <button class="btn primary">S'abonner</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="color:var(--on-primary);">© <span id="year"></span> Effective Joy. Tous droits réservés.</p>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="community.html">Community</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="event.html">Event</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- D'autres sections ici -->
+  
+  <script src="script.js"></script>
+</body>
+</html>
