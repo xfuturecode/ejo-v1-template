@@ -9,9 +9,19 @@
 <body>
   <header class="app-bar">
     <div class="container">
-      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" alt="logo"><span>Effective Joy</span></a>
+      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" height="36" alt="logo"><span>Effective Joy</span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span></button>
       <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a class="active" href="quotes.html">Quotes</a></li>
+        </ul>
+      </nav>
+      <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+      <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="event.html">Event</a></li>
@@ -24,32 +34,32 @@
   </header>
 
   <main class="section container">
-    <h2 style="color:#0a65cc; margin-bottom:16px;">Citations du jour</h2>
+    <h2 style="color:#0a65cc; margin-bottom:20px;">Citations du jour</h2>
     <div class="grid three" id="quotes-grid">
-      <blockquote class="card" style="padding:18px;">
-        <p style="color:#2b2b2b;">“La joie est une force.”</p>
+      <blockquote class="card" style="padding:20px;">
+        <p style="color:#2b2b2b; margin-bottom: 12px;">"La joie est une force."</p>
         <cite style="color:#0a65cc;">— Nehemie 8:10</cite>
       </blockquote>
-      <blockquote class="card" style="padding:18px;">
-        <p style="color:#2b2b2b;">“Là où deux ou trois sont réunis, je suis au milieu d’eux.”</p>
+      <blockquote class="card" style="padding:20px;">
+        <p style="color:#2b2b2b; margin-bottom: 12px;">"Là où deux ou trois sont réunis, je suis au milieu d'eux."</p>
         <cite style="color:#0a65cc;">— Matthieu 18:20</cite>
       </blockquote>
-      <blockquote class="card" style="padding:18px;">
-        <p style="color:#2b2b2b;">“Aime ton prochain comme toi-même.”</p>
+      <blockquote class="card" style="padding:20px;">
+        <p style="color:#2b2b2b; margin-bottom: 12px;">"Aime ton prochain comme toi-même."</p>
         <cite style="color:#0a65cc;">— Marc 12:31</cite>
       </blockquote>
     </div>
     <section class="section grid two">
       <div class="card" style="padding:24px;">
-        <h3 style="color:#0a65cc; margin-bottom:8px;">Soumettre une citation</h3>
-        <form style="display:grid; gap:10px;">
+        <h3 style="color:#0a65cc; margin-bottom:12px;">Soumettre une citation</h3>
+        <form style="display:grid; gap:12px;">
           <input placeholder="Auteur" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff;"/>
-          <textarea placeholder="Votre citation" rows="3" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff;"></textarea>
+          <textarea placeholder="Votre citation" rows="4" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff; resize: vertical;"></textarea>
           <button class="btn primary">Envoyer</button>
         </form>
       </div>
       <div class="card" style="padding:24px;">
-        <h3 style="color:#0a65cc; margin-bottom:8px;">Thèmes</h3>
+        <h3 style="color:#0a65cc; margin-bottom:12px;">Thèmes</h3>
         <div style="display:flex; gap:10px; flex-wrap:wrap;">
           <a class="btn ghost" href="#">Foi</a>
           <a class="btn ghost" href="#">Espoir</a>
@@ -68,5 +78,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-

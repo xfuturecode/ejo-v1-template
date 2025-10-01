@@ -9,7 +9,7 @@
 <body>
   <header class="app-bar">
     <div class="container">
-      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" alt="logo"><span>Effective Joy</span></a>
+      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" height="36" alt="logo"><span>Effective Joy</span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span></button>
       <nav>
         <ul class="nav-list">
@@ -20,15 +20,25 @@
           <li><a href="quotes.html">Quotes</a></li>
         </ul>
       </nav>
+      <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+      <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="event.html">Event</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
-  <section class="hero" style="height:40vh;">
+  <section class="hero" style="height:50vh; min-height:350px;">
     <div class="hero-content"><h1>Événements</h1><p>Rejoignez nos prochains rendez-vous.</p></div>
   </section>
 
   <main class="section container">
-    <h2 style="color:#0a65cc; margin-bottom:16px;">À venir</h2>
+    <h2 style="color:#0a65cc; margin-bottom:20px;">À venir</h2>
     <div class="grid three">
       <article class="card elevate-2">
         <img class="card-media" src="/assets/Layer 0.png" alt="Event">
@@ -56,7 +66,7 @@
       </article>
     </div>
     <section class="section">
-      <h3 style="color:#0a65cc; margin-bottom:8px;">Passés</h3>
+      <h3 style="color:#0a65cc; margin-bottom:16px;">Passés</h3>
       <div class="grid three">
         <article class="card"><div class="card-body"><h4 style="color:#0a65cc;">Praise Night</h4><p style="color:#2b2b2b;">Août • Kigali</p><a class="btn ghost" href="#">Photos</a></div></article>
         <article class="card"><div class="card-body"><h4 style="color:#0a65cc;">Youth Camp</h4><p style="color:#2b2b2b;">Juil. • Rwamagana</p><a class="btn ghost" href="#">Récap</a></div></article>
@@ -73,5 +83,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-

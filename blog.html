@@ -9,7 +9,7 @@
 <body>
   <header class="app-bar">
     <div class="container">
-      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" alt="logo"><span>Effective Joy</span></a>
+      <a class="brand" href="index.html"><img src="/assets/ejo.png" width="36" height="36" alt="logo"><span>Effective Joy</span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span></button>
       <nav>
         <ul class="nav-list">
@@ -20,15 +20,25 @@
           <li><a href="quotes.html">Quotes</a></li>
         </ul>
       </nav>
+      <div class="nav-scrim" id="navScrim" aria-hidden="true"></div>
+      <div class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
-  <section class="hero" style="height:40vh;">
+  <section class="hero" style="height:50vh; min-height:350px;">
     <div class="hero-content"><h1>Le Blog</h1><p>Histoires, enseignements et news.</p></div>
   </section>
 
   <main class="section container">
-    <h2 style="color:#0a65cc; margin-bottom:16px;">Nos Articles</h2>
+    <h2 style="color:#0a65cc; margin-bottom:20px;">Nos Articles</h2>
     <div class="grid three">
       <article class="card elevate-2">
         <img class="card-media" src="/assets/Layer 0.png" alt="Article">
@@ -57,17 +67,17 @@
     </div>
     <section class="section grid two">
       <div class="card" style="padding:24px;">
-        <h3 style="color:#0a65cc; margin-bottom:8px;">Catégories</h3>
-        <ul style="list-style:none; color:#2b2b2b; display:grid; gap:6px;">
+        <h3 style="color:#0a65cc; margin-bottom:12px;">Catégories</h3>
+        <ul style="list-style:none; color:#2b2b2b; display:grid; gap:8px;">
           <li><a class="btn ghost" href="#">Communauté</a></li>
           <li><a class="btn ghost" href="#">Musique</a></li>
           <li><a class="btn ghost" href="#">Événements</a></li>
         </ul>
       </div>
       <div class="card" style="padding:24px;">
-        <h3 style="color:#0a65cc; margin-bottom:8px;">Newsletter</h3>
+        <h3 style="color:#0a65cc; margin-bottom:12px;">Newsletter</h3>
         <form style="display:flex; gap:10px; flex-wrap:wrap;">
-          <input placeholder="Email" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff; min-width:240px;"/>
+          <input type="email" placeholder="Email" style="padding:12px 14px; border-radius:12px; border:1px solid #d6e6ff; flex: 1; min-width:200px;"/>
           <button class="btn primary">S'inscrire</button>
         </form>
       </div>
@@ -82,5 +92,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
